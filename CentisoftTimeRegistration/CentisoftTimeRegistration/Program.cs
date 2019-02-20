@@ -14,6 +14,7 @@ namespace CentisoftTimeRegistration
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine('Hi there');
             CreateWebHostBuilder(args).Build().Run();
         }
 
