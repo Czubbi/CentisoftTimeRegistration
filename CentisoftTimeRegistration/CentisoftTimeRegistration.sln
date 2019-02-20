@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentisoftTimeRegistration", "CentisoftTimeRegistration\CentisoftTimeRegistration.csproj", "{5C0DBA93-A2A8-4FFE-A3EF-C6D719F9A261}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentisoftAPI", "CentisoftAPI\CentisoftAPI.csproj", "{ECEE2D42-D82E-4BDD-92F8-468A435C9739}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5C0DBA93-A2A8-4FFE-A3EF-C6D719F9A261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C0DBA93-A2A8-4FFE-A3EF-C6D719F9A261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C0DBA93-A2A8-4FFE-A3EF-C6D719F9A261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEE2D42-D82E-4BDD-92F8-468A435C9739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEE2D42-D82E-4BDD-92F8-468A435C9739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEE2D42-D82E-4BDD-92F8-468A435C9739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEE2D42-D82E-4BDD-92F8-468A435C9739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
