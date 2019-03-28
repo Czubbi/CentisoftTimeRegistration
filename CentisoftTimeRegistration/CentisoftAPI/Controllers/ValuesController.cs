@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Dapper;
+using Microsoft.EntityFrameworkCore;
+using System.Data.SqlClient;
+
 
 namespace CentisoftAPI.Controllers
 {
@@ -10,11 +14,14 @@ namespace CentisoftAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public static SqlConnection connection = new SqlConnection("Server=kraka.ucn.dk;Database=dmaj0917_1067696;User Id=dmaj0917_1067696;Password=Password1!;");
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<dynamic>> Get()
         {
-            return new string[] { "value1", "value2" };
+            string query = "SELECT * FROM Client";
+            var result = connection.Query(query).ToList();
+            return result;
         }
 
         // GET api/values/5

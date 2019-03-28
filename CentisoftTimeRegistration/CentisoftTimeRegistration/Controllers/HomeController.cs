@@ -5,14 +5,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CentisoftTimeRegistration.Models;
+using CentisoftAPI.Controllers;
+using System.Net.Http;
 
 namespace CentisoftTimeRegistration.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private static readonly HttpClient client = new HttpClient();
+        ValuesController api= new ValuesController();
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var stringTask = await client.GetStringAsync("https://localhost:5301/api/values");
+            Console.WriteLine(stringTask);
+            var a = api.Get();
+            return View(a);
         }
 
         public IActionResult About()

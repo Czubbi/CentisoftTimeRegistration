@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.App"/>
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7"/>
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\CentisoftAPI\CentisoftAPI.csproj"/>
+  </ItemGroup>
 </Project>
